@@ -81,7 +81,7 @@ const MenuEntryNav = styled.div<Props>`
     align-items: center;
     width: 100%;
     height: 100%;
-    color: #F9AE2E !important;
+    color: #c4adee !important;
     // font-weight: 600;
   }
 

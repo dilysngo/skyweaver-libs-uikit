@@ -35,6 +35,8 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   z-index: 20;
   transform: translate3d(0, 0, 0);
   box-shadow: 0 0px 13px #e9e9e9;
+
+  display: none !important;
 `;
 
 const BodyWrapper = styled.div`
@@ -57,7 +59,7 @@ const BodyWrapper = styled.div`
 // `;
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   flex-grow: 1;
-  margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
+  // margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
   transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate3d(0, 0, 0);
   max-width: 100%;
